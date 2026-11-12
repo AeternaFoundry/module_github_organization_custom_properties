@@ -27,7 +27,7 @@ EOT
         v.values_editable_by == null || (contains(["org_actors", "org_and_repo_actors"], v.values_editable_by))
       )
     ])
-    error_message = "must be one of: org_actors, org_and_repo_actors"
+    error_message = "must be one of: \"org_actors\", \"org_and_repo_actors\""
   }
   # Note: 1 additional provider-side validator is enforced at apply time but not mirrored as validation{} blocks here (bespoke or non-mechanically-translatable).
 }
